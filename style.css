@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+/* To place main in the vertical middle */
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* to place items in div on a single row */
+.card-row{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem; 
+}
+
+.card{
+    background-color: #ffffff;
+    color: #333333;
+    padding: 1.5rem;
+    border-radius: 6px;
+    box-shadow: 0 4px 15px rgba(4,60,119,0.211)
+}
+
+.card-header{
+    margin-bottom: 1.5rem;
+    text-align: center;
+    border-bottom: solid 1px #cccccc;
+}
+.card-header .sub-title{
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #6b46c1;
+}
+
+.card-header .title{
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
+
+.title sup{
+    font-size: 1.5rem;
+}
+
+.card-header .description{
+    font-size: 0.7;
+    margin-bottom: 1.5rem;
+}
+/* to put icon and text on the same line */
+.card-body .list .item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.8rem;
+}
+
+.card-body .list .item .fa{
+    font-size: 0.5rem;
+    width: 20px;
+    height: 20px;
+    background: rgb(222, 247, 236);
+    color: #6b46c1;
+    font-size: 0.6rem;
+    /* to place icon in middle of circle */
+    display: flex; 
+    align-items:center;
+    justify-content: center;
+    border-radius: 33px;
+}
+
+.card-body .list .item p{
+    font-size: 0.6rem;
+    margin-left: 0.5rem;
+}
+
+.card-body .list small {
+    font-size: 0.6rem;
+    margin-top: 0rem;
+}
+
+.card-footer {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.card-footer .btn{
+    font-size: 0.6rem;
+    text-decoration: none;
+    background: #6b46c1;
+    color: #ffffff;
+    font-weight: 600;   
+    padding: 15px;
+    border-radius: 5px;
+    /* display button to fill horizontal space */
+    display: block;
+    cursor: pointer;
+}
+
+@media (max-width: 991px){
+    .card{
+        width: 40%;
+    }
+}
